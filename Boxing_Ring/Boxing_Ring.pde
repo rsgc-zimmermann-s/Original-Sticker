@@ -1,26 +1,61 @@
+ //Stuart Zimmermann
+//02.05.2015
+//Boxing Ring using vertexs
 
+//create canvas
+size(500, 700);
 
-// create canvas
-// width height
+//boxing floor
+beginShape();
+fill(0, 0, 255, 200);
+noStroke();
+vertex(75, 250);
+vertex(375, 250);
+vertex(425, 475);
+vertex(125, 475);
+endShape(CLOSE);
 
-void setup() {
-size(1200, 700, P3D);
-}
+//Left Side Skirt
+beginShape();
+fill(0, 0, 255, 200);
+noStroke();
+vertex(75, 250);
+vertex(125, 475);
+vertex(115, 500);
+vertex(65, 275);
+endShape(CLOSE);
 
-void draw () {
-rect(290, 50, 600, 600, 33);
+//Front Skirt
+beginShape();
+fill(0, 0, 255, 200);
+noStroke();
+vertex(125, 475);
+vertex(425, 475);
+vertex(415, 500);
+vertex(115, 500);
+endShape(CLOSE);
 
-fill(0, 0, 255);
-line(250, 175, 725, 175);
-line(350, 475, 900, 475);
-line(250, 175, 350, 475);
-line(725, 175, 900, 475);
+//Back Left Post
+beginShape();
+fill(#000000);
+strokeWeight(0);
+vertex(75, 250);
+vertex(80, 250);
+vertex(105, 200);
+vertex(100, 200);
+endShape(CLOSE);
 
+//Front Left Post
+beginShape();
+fill(#000000);
+strokeWeight(0);
+vertex(125, 475);
+vertex(130, 475);
+vertex(155, 425);
+vertex(150, 425);
+endShape(CLOSE);
 
-line(250, 175, 250, 300);
-line(350, 475, 350, 600);
-line(900, 475, 900, 600);
-line(250, 300, 350, 600);
-line(350, 600, 900, 600);
-fill(1000, 0, 0);
-}
+//Front Right Post
+beginShape();
+fill(#000000);
+strokeWeight(0);
